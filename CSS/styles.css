@@ -17,6 +17,7 @@ h2{
     font-size: 40px;
 }
 
+
 p a{
     font-family: Courier new;
 	font-size: 20px;
@@ -26,12 +27,32 @@ p a{
     text-decoration: none;
 	background-color: yellow;
     float:center;
+    position: relative; top: -80px;
 }
-
 hr {
-    border-color:yellow;
+    margin-top: 4px;
 }
 
+#about_band{
+    margin-top: -40px;
+}
+
+#album{
+    margin-bottom: -67px;
+}
+#tour{
+ margin-top: -67px;
+ background-image: url("../Images/tour_02.png");
+}
+#webstore{
+ margin-top: -77px;   
+}
+#band{
+    margin-top: -24px;
+}
+#videos{
+    background-image: url("../Images/video_01.jpg");
+}
 p a:hover{
 	padding: 16px;
 }
