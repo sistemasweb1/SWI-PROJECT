@@ -30,8 +30,13 @@ p a{
     position: relative; top: -80px;
 }
 
+#about_band{
+    text-align: center;
+}
+
 #album{
-    margin: 0px;
+    text-align: center;
+    /*margin: 0px;*/
 }
 
 
@@ -53,12 +58,26 @@ p a:hover{
 }
 
 .tape1{
-    float: left;
-    transform: rotate(-45deg);
+    width: 30vw; 
+    max-width: 300px;
+    top: -30px;
+    height: auto; 
+    position: absolute;
+    left: 0px;
+    /*transform: rotate(-45deg);*/
+}
+
+.tape1 img, .tape2 img
+{
+    width: 100%;
 }
 
 .tape2{
-    float: right;
+    width: 30vw; 
+    max-width: 300px;
+    height: auto; 
+    position: absolute;
+    right: 0px;
     transform: rotate(45deg);
 }
 ul{
@@ -87,6 +106,7 @@ li a:hover{
     background-color: yellow;
     color: black;
 }
+
 
 * {
     box-sizing: border-box;
