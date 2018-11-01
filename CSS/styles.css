@@ -29,37 +29,38 @@ p a{
     float:center;
     position: relative; top: -80px;
 }
-hr {
-    margin-top: 4px;
-}
-
-#about_band{
-    margin-top: -40px;
-}
 
 #album{
-    margin-bottom: -67px;
+    margin: 0px;
 }
+
+
 #tour{
-    
- margin-top: -67px;
- background-image: url("../Images/tour_02.png");
+
 }
 #webstore{
- margin-top: -77px;   
+ /*margin-top: -77px;   */
 }
 #band{
-    margin-top: -24px;
+    /*margin-top: -24px;*/
 }
 #videos{
-    background-image: url("../Images/video_01.jpg");
+    /*background-image: url("../Images/video_01.jpg");*/
+    margin: 0px;
 }
 p a:hover{
 	padding: 16px;
 }
 
+.tape1{
+    float: left;
+    transform: rotate(-45deg);
+}
 
-
+.tape2{
+    float: right;
+    transform: rotate(45deg);
+}
 ul{
     list-style-type: none;
     margin: 0;
