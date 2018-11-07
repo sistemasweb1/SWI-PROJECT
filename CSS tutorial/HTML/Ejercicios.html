@@ -1,0 +1,1528 @@
+<html>
+    <head>
+        <title>Ejercicios CSS</title>
+        <style>
+            p.exe1 {
+                color: red;
+            }
+            #para1 {
+                color:red;
+            }
+            .colortext {
+                color: red;
+            }
+            p.exe4, h3.exe4{
+                color: red;
+            }
+            div.exe5, div.exe8 {
+            	background-color: lightblue;
+            }
+            h3.exe5, h3.exe8{
+            	color: blue;
+            }
+            div.exe6 {
+                background-color: linen;
+            }
+            a.exe45:link {
+                color: red;
+            }
+            a.exe45:visited {
+                color: blue;
+            }
+            a.exe45:hover {
+                color: black;
+            }
+            a.exe45:active {
+                color: green;
+            }
+            a.exe46:link, a.exe46:visited {
+                text-decoration: none;
+            }
+            a.exe46:hover, a.exe46:active {
+                text-decoration: underline;
+            }
+            a.exe47:link, a.exe47:visited {
+                background-color: lightblue;
+            }
+            a.exe47:hover, a.exe47:active {
+                background-color: yellow;
+            }
+            div.exe72 p {
+                color:red;
+            }
+            div.exe73 > p {
+                color:red;
+            }
+            div.exe74 + p {
+                color:red;
+            }
+            div.exe75 ~ p {
+                color:red;
+            }
+            a.exe76:link, a.exe76:visited {
+                background-color: lightblue;
+            }
+            a.exe76:hover, a.exe76:active {
+                background-color: yellow;
+            }
+            p.highlight:hover {
+                background-color: lightblue;
+            }
+            p.exe78:first-child {
+                background-color: lightblue;
+            }
+            input.exe79:focus {
+                background-color: lightblue;
+            }
+            p.exe80::first-line {
+                color: red;
+            }
+            p.exe81::first-letter {
+                color: red;
+                font-size: xx-large;
+            }
+            p.exe82::before {
+                content: url("../../Images/FB_boton_mini.png");
+            }
+            p.exe82::after {
+                content: url("../../Images/FB_boton_mini.png");
+            }
+            img.exe84 {
+                opacity: 0.4;
+            }
+            img.exe84:hover {
+                opacity: 1.0;
+            }
+            a.exe85[target] {
+                background-color: lightblue;
+            }
+            a.exe86[target="_blank"] {
+                background-color: lightblue;
+            }
+            .exe87[title~="red"] {
+                border: 5px solid red;
+            }
+            .exe88[title^="red"] {
+                border: 5px solid red;
+            }
+            .exe89[title$="flower"] {
+                border: 5px solid red;
+            }
+            .exe90[title*="flow"] {
+                border: 5px solid red;
+            }
+            @font-face {
+                font-family: sansation1;
+                src: url(../Fonts/Sansation_Light.woff);
+            }
+            @font-face {
+                font-family: sansation;
+                src: url(../Fonts/Sansation_Light.woff);
+            }
+            @font-face {
+                font-family: sansation;
+                src: url(../Fonts/Sansation_Bold.woff);
+                font-weight: bold;
+            }
+            div.exe128 {
+                width: 100px; 
+                height: 100px; 
+                background: red; 
+                transition: width 2s;
+            }
+            div.exe128:hover {
+                width: 300px;
+            }
+            div.exe129 {
+                width: 100px; 
+                height: 100px; 
+                background: red; 
+                transition: width 2s;
+                transition-timing-function: ease-in-out;
+            }
+            div.exe129:hover {
+                width: 300px;
+            }
+            div.exe130 {
+                width: 100px; 
+                height: 100px; 
+                background: red; 
+                transition: width 2s;
+                transition-delay: 0.5s; 
+            }
+            div.exe130:hover {
+                width: 300px;
+            }
+            div.exe131 {
+                width: 100px; 
+                height: 100px; 
+                background: red; 
+                transition: background 2s, transform 2s;
+            }
+            div.exe131:hover {
+                background: blue;
+                transform: rotate(180deg);
+            }
+            div.exe132 {
+                width: 100px;
+                height: 100px;
+                background: red;
+                transition: width 2s ease-in-out 0.5s;
+            }
+            div.exe132:hover {
+                width: 400px;
+            }
+            div.exe133 {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-name: example;
+                animation-duration: 2s;
+            }
+            @keyframes example {
+                from {background-color: red;}
+                to {background-color: blue;}
+            }
+            div.exe134 {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                background-color: red;
+                animation-name: example1;
+                animation-duration: 4s;
+            }
+            @keyframes example1 {
+                0%   {background-color: red; left:0px; top:0px;}
+                25%  {background-color: blue; left:0px; top:200px;}
+                50%  {background-color: green; left:200px; top:200px;}
+                75%  {background-color: yellow; left:200px; top:0px;}
+                100% {background-color: red; left:0px; top:0px;}
+            }
+            div.exe135 {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                background-color: red;
+                animation-name: example2;
+                animation-duration: 2s;
+                animation-delay: 1s;
+            }
+            @keyframes example2 {
+                0%   {background-color: red; left:0px;}
+                50%  {background-color: yellow; left:200px;}
+                100% {background-color: red; left:0px;}
+            }
+            div.exe136 {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                background-color: red;
+                animation-name: example3;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes example3 {
+                0%   {background-color: red; left:0px;}
+                50%  {background-color: yellow; left:200px;}
+                100% {background-color: red; left:0px;}
+            }
+            div.exe137 {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                background-color: red;
+                animation-name: example4;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;   
+            }
+            @keyframes example4 {
+                0%   {background-color: red; left:0px; top:0px;}
+                25%  {background-color: blue; left:0px; top:200px;}
+                50%  {background-color: green; left:200px; top:200px;}
+                75%  {background-color: yellow; left:200px; top:0px;}
+                100% {background-color: red; left:0px; top:0px;}
+            }
+            div.exe138 {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                background-color: red;
+                animation-name: example5;
+                animation-duration: 4s;
+                animation-timing-function: ease-in-out;
+            }
+            @keyframes example5 {
+                0%   {background-color: red; left:0px;}
+                50%  {background-color: yellow; left:200px;}
+                100% {background-color: red; left:0px;}
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>CSS Tutorial</h1>
+        
+        <h2>Exercise 1</h2>
+        <p>Change the color of all &lt;p&gt; elements to "red".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p class="exe1">This is a paragraph.</p>
+            <p class="exe1">This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 2</h2>
+        <p>Change the color of the element with id="para1", to "red".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p id="para1">This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 3</h2>
+        <p>Change the color of all elements with the class "colortext", to "red".</p>
+        
+        <div>
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p class="colortext">This is another paragraph.</p>
+            <p class="colortext">This is also a paragraph.</p>
+        </div>
+
+        <h2>Exercise 4</h2>
+        <p>Change the color of all &lt;p&gt; and &lt;h3&gt; elements, to "red". Group the selectors to minimize code.</p>
+
+        <div>
+            <h3 class="exe4">This is a heading</h3>
+            <h4>This is a smaller heading</h4>
+            <p class="exe4">This is a paragraph.</p>
+            <p class="exe4">This is another paragraph.</p>                            
+        </div>
+
+        <h2>Exercise 5</h2>
+        <p>Add an external style sheet with the URL: "Tutorial.css".</p>
+
+        <div class="exe5">
+            <h3 class="exe5">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 6</h2>
+        <p>Set "background-color: linen" for the page, using an internal style sheet.</p>
+
+        <div class="exe6">
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 7</h2>
+        <p>Set "background-color: linen" for the page, using an inline style.</p>
+
+        <div style="background-color: linen">
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 8</h2>
+        <p>Remove all styles, except the external style sheet "mystyle.css".</p>
+
+        <div class="exe8">
+            <h3 class="exe8">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+        
+        <h2>Exercise 9</h2>
+        <p>Set the background color for the page to "linen" and the background color for &lt;h1&gt; to "lightblue".</p>
+
+        <div style="background-color: linen;">
+            <h3 style="background-color: lightblue;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+        
+        <h2>Exercise 10</h2>
+        <p>Set "paper.jpg" as the background image of the page.</p>
+
+        <div style="background-image: url(../../Images/paper.jpg)">
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 11</h2>
+        <p>Set "gradient_bg_vertical.png" as the background image of the page, and repeat it vertically only.</p>
+
+        <div style="background-image: url(../../Images/gradient_bg_vertical.png); background-repeat: repeat-y;">
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 12</h2>
+        <p>Specify that the background image should be shown once, in the top right corner.</p>
+
+        <div style="background-image: url(../../Images/paper.jpg); background-repeat: no-repeat; background-position: top right;">
+            <h1>This is a Heading</h1>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 13</h2>
+        <p>Use the shorthand background property to set background image to "paper.jpg", show it once, in the top right corner.</p>
+
+        <div style="background: url(../../Images/paper.jpg) no-repeat top right;">
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 14</h2>
+        <p>Set a "4px", "dotted" border for &lt;p&gt;.</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p style="border: dotted 4px;">This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 15</h2>
+        <p>Set the border color for &lt;p&gt; to "red".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p style="border: 4px dotted red;">This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 16</h2>
+        <p>Change the 3 border properties, so that they only show the border on the top side.</p>
+
+        <div>
+            <h1>This is a Heading</h1>
+            <p style="border-top: 4px dotted red;">This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 17</h2>
+        <p>With the border property: Set the border for p to "10px", "solid" and "green".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p style="border: 10px solid green;">This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 18</h2>
+        <p>Set the left margin of &lt;h3&gt; to "20px".</p>
+
+        <div>
+            <h3 style="background-color: lightblue; margin-left: 20px;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 19</h2>
+        <p>Set all margins for &lt;h1&gt; to "25px".</p>
+
+        <div>
+            <h3 style="background-color: lightblue; margin: 25px;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 20</h2>
+        <p>Use the margin property to set the top and bottom margins for &lt;h3&gt; to "50px", and left and right margins to "25px".</p>
+
+        <div>
+            <h3 style="background-color: lightblue; margin: 50px 25px;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 21</h2>
+        <p>Use the margin property to center align the &lt;h3&gt; element.</p>
+
+        <div>
+            <h3 style="background-color: lightblue; width: 300px; margin: auto;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 22</h2>
+        <p>Set the top padding of &lt;p&gt; to "30px".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p style="background-color: lightblue; padding-top: 30px;">This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 23</h2>
+        <p>Set all paddings for &lt;p&gt; to "50px".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p style="background-color: lightblue; padding: 50px;">This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 24</h2>
+        <p>Use the padding property to set the top and bottom paddings for &lt;p&gt; to "25px", and left and right paddings to "50px".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p style="background-color: lightblue; padding: 25px 50px;">This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 25</h2>
+        <p>Set the height of &lt;h3&gt; to "100px".</p>
+
+        <div>
+            <h3 style="background-color: lightblue; height: 100px;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 26</h2>
+        <p>Set the width of &lt;h3&gt; to "50%".</p>
+
+        <div>
+            <h3 style="background-color: lightblue; width: 50%;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 27</h2>
+        <p>Set the width of the div to "200px".</p>
+
+        <div>
+            <div style=" background-color: lightblue; width: 200px;">Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.</div>
+        </div>
+
+        <h2>Exercise 28</h2>
+        <p>Set the padding of the div to "25px".</p>
+
+        <div>
+            <div style=" background-color: lightblue; width: 200px; padding: 25px;">Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.</div>
+        </div>
+
+        <h2>Exercise 29</h2>
+        <p>Set the border of the div to "25px solid navy".</p>
+
+        <div>
+            <div style=" background-color: lightblue; width: 200px; padding: 25px; border: 25px solid navy;">Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.</div>
+        </div>
+
+        <h2>Exercise 30</h2>
+        <p>Set the margin of the div to "25px".</p>
+
+        <div>
+            <div style=" background-color: lightblue; width: 200px; padding: 25px; border: 25px solid navy; margin: 25px;">Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua.</div>
+        </div>
+
+        <h2>Exercise 31</h2>
+        <p>Set a "solid", "5px" outline for &lt;p&gt;.</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p style="outline-style: solid; outline-width: 5px;">This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 32</h2>
+        <p>Set the outline color for &lt;p&gt; to "green".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p style="outline-style: solid; outline-width: 4px; outline-color: green;">This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 33</h2>
+        <p>With the outline property: Set the outline for p to "red", "dotted" and "10px".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p style="outline: red dotted 10px;">This is a paragraph.</p>
+        </div>
+
+        <h2>Exercise 34</h2>
+        <p>Set the text color for the page to "red", and the text color for &lt;h3&gt; to "blue".</p>
+
+        <div style="color: red;">
+            <h3 style="color: blue;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 35</h2>
+        <p>Center align the &lt;h3&gt; element.</p>
+
+        <div>
+            <h3 style="text-align: center;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 36</h2>
+        <p>Remove the underline from the link.</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p><a style="text-decoration: none;" href="#">CSS text tutorial</a></p>
+        </div>
+
+        <h2>Exercise 37</h2>
+        <p>Style text in &lt;h3&gt; to uppercase letters, and text in &lt;p&gt; to capitalized letters.</p>
+
+        <div>
+            <h3 style="text-transform: uppercase;">This is a Heading</h3>
+            <p style="text-transform: capitalize;">This is a paragraph.</p>
+            <p style="text-transform: capitalize;">This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 38</h2>
+        <p>Indent the first line of the &lt;p&gt; element with 20px.</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p style="text-indent: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+
+        <h2>Exercise 39</h2>
+        <p>Set the font family for the page to "Courier New", and the font family for &lt;h3&gt; to "Verdana".</p>
+
+        <div style="font-family: Courier New;">
+            <h3 style="font-family: Verdana;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 40</h2>
+        <p>Show &lt;p&gt; elements as "italic" text.</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p style="font-style: italic;">This is a paragraph.</p>
+            <p style="font-style: italic;">This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 41</h2>
+        <p>Set the font size for the page to "20px", and the font size for &lt;h3&gt; to "3em".</p>
+
+        <div style="font-size: 20px;">
+            <h3 style="font-size: 3em;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 42</h2>
+        <p>Show &lt;p&gt; elements as "bold" text.</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p style="font-weight: bold;">This is a paragraph.</p>
+            <p style="font-weight: bold;">This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 43</h2>
+        <p>With the font property: Set the &lt;p&gt; to "italic", "20px" and "Verdana".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p style="font: italic 20px Verdana;">This is a paragraph.</p>
+            <p style="font: italic 20px Verdana;">This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 44</h2>
+        <p>Set the color for links to "green".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p><a style="color: green;" href="https://www.w3schools.com">W3Schools.com</a></p>
+        </div>
+
+        <h2>Exercise 45</h2>
+        <p>Set the color for unvisited links to "red", and the color for visited links "blue".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p><a class="exe45" href="https://www.w3schools.com">W3Schools.com</a></p>
+        </div>
+
+        <h2>Exercise 46</h2>
+        <p>Remove underlines for visited and unvisited links, and specify "underline" for the hover and active link states.</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p><a class="exe46" href="https://www.w3schools.com">W3Schools.com</a></p>
+        </div>
+
+        <h2>Exercise 47</h2>
+        <p>Set the background color for visited and unvisited links to "lightblue", and the background color for the hover and active link states to "yellow".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p><a class="exe47" href="https://www.w3schools.com">W3Schools.com</a></p>
+        </div>
+
+        <h2>Exercise 48</h2>
+        <p>Set the list style for unordered lists to "square", and the list style for ordered lists to "upper-roman".</p>
+
+        <div>
+            <p>This is an unordered list:</p>
+            <ul style="list-style-type: square;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+            
+            <p>This is an ordered list:</p>
+            <ol style="list-style-type: upper-roman;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ol>
+        </div>
+
+        <h2>Exercise 49</h2>
+        <p>Set the image "FB_boton_mini.jpg" as the list item marker for the unordered list.</p>
+
+        <div>
+            <p>This is an unordered list:</p>
+            <ul style="list-style-image: url(../../Images/FB_boton_mini.png);">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+        </div>
+
+        <h2>Exercise 50</h2>
+        <p>With the list-style property: Set the unordered list marker to "FB_boton_mini.png", with a backup style of "circle", and display the markers inside the content flow.</p>
+
+        <div>
+            <p>This is an unordered list:</p>
+            <ul style="list-style: circle inside url(../../Images/FB_boton_mini.png);">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+        </div>
+
+        <h2>Exercise 51</h2>
+        <p>Remove the bullets/markers from the list items.</p>
+
+        <div>
+            <ul style="list-style-type: none;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+        </div>
+
+        <h2>Exercise 52</h2>
+        <p>Set the border to "2px solid green" for table, th and td elements.</p>
+
+        <div>
+            <table style="border: 2px solid green;">
+                <tr>
+                    <th style="border: 2px solid green;">Firstname</th>
+                    <th style="border: 2px solid green;">Lastname</th>
+                </tr>
+                <tr>
+                    <td style="border: 2px solid green;">Peter</td>
+                    <td style="border: 2px solid green;">Griffin</td>
+                </tr>
+                <tr>
+                    <td style="border: 2px solid green;">Lois</td>
+                    <td style="border: 2px solid green;">Griffin</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Exercise 53</h2>
+        <p>Collapse the table borders into a single border.</p>
+
+        <div>
+            <table style="border: 1px solid black; border-collapse: collapse;">
+                <tr>
+                    <th style="border: 1px solid black;">Firstname</th>
+                    <th style="border: 1px solid black;">Lastname</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Peter</td>
+                    <td style="border: 1px solid black;">Griffin</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Lois</td>
+                    <td style="border: 1px solid black;">Griffin</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Exercise 54</h2>
+        <p>Set the width of the table to "100%".</p>
+
+        <div>
+            <table style="border: 1px solid black; width: 100%;">
+                <tr>
+                    <th style="border: 1px solid black;">Firstname</th>
+                    <th style="border: 1px solid black;">Lastname</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Peter</td>
+                    <td style="border: 1px solid black;">Griffin</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Lois</td>
+                    <td style="border: 1px solid black;">Griffin</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Exercise 55</h2>
+        <p>Set the text alignment in &lt;td&gt; elements to "right".</p>
+
+        <div>
+            <table style="border: 1px solid black;">
+                <tr>
+                    <th style="border: 1px solid black;">Firstname</th>
+                    <th style="border: 1px solid black;">Lastname</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; text-align: right;">Peter</td>
+                    <td style="border: 1px solid black; text-align: right;">Griffin</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black; text-align: right;">Lois</td>
+                    <td style="border: 1px solid black; text-align: right;">Griffin</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Exercise 56</h2>
+        <p>Set the padding in &lt;th&gt; elements to "15px".</p>
+
+        <div>
+            <table style="border: 1px solid black;">
+                <tr>
+                    <th style="border: 1px solid black; padding: 15px;">Firstname</th>
+                    <th style="border: 1px solid black; padding: 15px;">Lastname</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Peter</td>
+                    <td style="border: 1px solid black;">Griffin</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Lois</td>
+                    <td style="border: 1px solid black;">Griffin</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Exercise 57</h2>
+        <p>Set the background color of &lt;th&gt; elements to "lightblue".</p>
+
+        <div>
+            <table style="border: 1px solid black;">
+                <tr>
+                    <th style="border: 1px solid black; background-color: lightblue;">Firstname</th>
+                    <th style="border: 1px solid black; background-color: lightblue;">Lastname</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Peter</td>
+                    <td style="border: 1px solid black;">Griffin</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Lois</td>
+                    <td style="border: 1px solid black;">Griffin</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Exercise 58</h2>
+        <p>Hide the &lt;h3&gt; element. It should still take up the same space as before.</p>
+
+        <div>
+            <h3 style="visibility: hidden;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 59</h2>
+        <p>Hide the &lt;h3&gt; element. It should not take up any space.</p>
+
+        <div>
+            <h3 style="display: none;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 60</h2>
+        <p>Display the list items as inline elements.</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+
+            <ul>
+                <li style="display: inline;">Apple</li>
+                <li style="display: inline;">Orange</li>
+                <li style="display: inline;">Pear</li>
+            </ul>
+        </div>
+
+        <h2>Exercise 61</h2>
+        <p>Display the &lt;strong&gt; elements as block elements.</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p>This is a <strong style="display: block;">paragraph</strong>, with some words more <strong style="display: block;">important</strong> than others </p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 62</h2>
+        <p>Position the &lt;h3&gt; element relative to the browser window. 50px from the top, and 50px from the right.</p>
+
+        <div>
+            <h3 style="position: fixed; top: 50px; right: 50px; color: red;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 63</h2>
+        <p>Position the &lt;h3&gt; element 20px left, and 30px down, relative to its normal position.</p>
+
+        <div>
+            <h3 style="position: relative; top: 30px; left: -20px; color: red;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 64</h2>
+        <p>Position the &lt;h1&gt; element 150px from the left, and 50px from the top, relative to the HTML page.</p>
+
+        <div>
+            <h3 style="position: absolute; top: 50px; left: 150px; color: red;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 65</h2>
+        <p>Position the &lt;img&gt; element behind the text.</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+            <img style="position:relative; left: 0px; bottom: 120px; z-index: -1;" src="../../Images/FB_boton.png" width="100" height="140">
+        </div>
+
+        <h2>Exercise 66</h2>
+        <p>Position the element with the "topleft" class 30px from the left, and 15px from the top, relative to its container.</p>
+
+        <div style="position: relative;">
+            <img src="../../Images/FB_boton.png" alt="Cinque Terre" width="500" height="150" style="width: 100%; height: auto; opacity: 0.3;">
+            <div style="position: absolute; left: 30px; top: 15px; font-size: 18px;">Top Left</div>
+        </div>
+
+        <h2>Exercise 67</h2>
+        <p>Add a scrollbar to the &lt;div&gt; element.</p>
+
+        <div style="background-color: #eee; width: 200px; height: 70px; border: 1px dotted black; overflow: scroll;">
+            <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+            <p>'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+        </div>
+
+        <h2>Exercise 68</h2>
+        <p>Specify that the overflowing text in the &lt;div&gt; element should not be visible, not even with scrolling.</p>
+
+        <div style="background-color: lightblue; width: 200px; height: 200px; overflow: hidden;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+
+        <h2>Exercise 69</h2>
+        <p>Add a horizontal scrollbar to &lt;div&gt;.</p>
+
+        <div style="background-color: #eee; width: 150px; height: 70px; border: 1px dotted black; white-space: nowrap; overflow-x: scroll;">
+            <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+        </div>
+
+
+        <h2>Exercise 70</h2>
+        <p>Center align the &lt;div&gt; element using margins.</p>
+
+        <div style="margin-left: auto; margin-right: auto; width: 300px; background-color: #b0e0e6;">
+            <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+            <p>'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+        </div>
+
+
+        <h2>Exercise 71</h2>
+        <p>Position the &lt;div&gt; element all the way to the right using absolute positioning.</p>
+
+        <div style="position: absolute; right: 0px; width: 300px; background-color: #b0e0e6;">
+            <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+            <p>'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+
+        <h2>Exercise 72</h2>
+        <p>Change the color of all &lt;p&gt; elements, that are descendants of &lt;div&gt; elements, to "red".</p>
+            
+        <div>
+            <div class="exe72">
+                <p>This is a paragraph inside a div element.</p>
+                <p>This is another paragraph inside a div element.</p>
+                <span><p>This a paragraph inside a span element, inside a div element.</p></span>
+            </div>
+            <p>This is a paragraph, not inside a div element.</p>
+            <p>This is another paragraph, not inside a div element.</p>
+        </div>
+
+        <h2>Exercise 73</h2>
+        <p>Change the color of all &lt;p&gt; elements, that are immediate children of &lt;div&gt; elements, to "red".</p>
+
+        <div>
+            <div class="exe73">
+                <p>This is a paragraph inside a div element.</p>
+                <p>This is another paragraph inside a div element.</p>
+                <span><p>This a paragraph inside a span element, inside a div element.</p></span>
+            </div>
+            <p>This is a paragraph, not inside a div element.</p>
+            <p>This is another paragraph, not inside a div element.</p>
+        </div>
+
+        <h2>Exercise 74</h2>
+        <p>Change the color of &lt;p&gt; elements, that are the adjacent (immediately following) sibling of a &lt;div&gt; element, to "red".</p>
+
+        <div>
+            <div class="exe74">
+                <p>This is a paragraph inside a div element.</p>
+                <p>This is another paragraph inside a div element.</p>
+                <span><p>This a paragraph inside a span element, inside a div element.</p></span>
+            </div>
+            <p>This is a paragraph, not inside a div element.</p>
+            <p>This is another paragraph, not inside a div element.</p>
+        </div>
+
+        <h2>Exercise 75</h2>
+        <p>Change the color of &lt;p&gt; elements, that are the siblings of a &lt;div&gt; element, to "red".</p>
+
+        <div>
+            <div class="exe75">
+                <p>This is a paragraph inside a div element.</p>
+                <p>This is another paragraph inside a div element.</p>
+                <span><p>This a paragraph inside a span element, inside a div element.</p></span>
+            </div>
+            <p>This is a paragraph, not inside a div element.</p>
+            <p>This is another paragraph, not inside a div element.</p>
+        </div>
+
+        <h2>Exercise 76</h2>
+        <p>Set the background color for visited and unvisited links to "lightblue", and the background color for the hover and active link states to "yellow".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p><a class="exe76" href="https://www.w3schools.com">W3Schools.com</a></p>
+        </div>
+
+        <h2>Exercise 77</h2>
+        <p>Change the background color, when a user hovers over p elements, with the class "highlight", to "lightblue".</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p class="highlight">This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 78</h2>
+        <p>Set the background color of &lt;p&gt; elements, that are the first child of any element, to "lightblue".</p>
+
+        <div>
+            <p class="exe78">This is a paragraph.</p>
+            <p class="exe78">This is also a paragraph</p>
+        </div>
+
+        <h2>Exercise 79</h2>
+        <p>Set the background color of &lt;input&gt; elements that are in focus (clicked or active), to "lightblue".</p>
+
+        <div>
+            <form action="/action_page.php" method="get">
+                First name: <input class="exe79" type="text" name="fname"><br>
+                Last name: <input class="exe79" type="text" name="lname"><br>
+                <input class="exe79" type="submit" value="Submit">
+            </form>
+        </div>
+
+        <h2>Exercise 80</h2>
+        <p>Set text color to red, for the first line of the &lt;p&gt; element.</p>
+
+        <div>
+            <p class="exe80">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+        </div>
+
+        <h2>Exercise 81</h2>
+        <p>Set text color to "red", and the text size to "xx-large", for the first letter of the &lt;p&gt; element.</p>
+
+        <div>
+            <p class="exe81">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+        </div>
+
+        <h2>Exercise 82</h2>
+        <p>Insert the image "FB_boton_mini.png" before, and after &lt;p&gt; elements, using the ::before and ::after pseudo-elements.</p>
+
+        <div>
+            <h3>This is a Heading</h3>
+            <p class="exe82">This is a paragraph.</p>
+            <p class="exe82">This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 83</h2>
+        <p>Set the transparency/opacity of the &lt;img&gt; element to "0.4".</p>
+
+        <div>
+            <img style="opacity: 0.4;" src="../../Images/FB_boton.png" width="150" height="113">
+        </div>
+
+        <h2>Exercise 84</h2>
+        <p>Remove the transparency/opacity of the &lt;img&gt; element when the user hovers over it with the mouse pointer.</p>
+
+        <div>
+                <img class="exe84" src="../../Images/FB_boton.png" width="150" height="113">
+        </div>
+
+        <h2>Exercise 85</h2>
+        <p>Set the background-color to "lightblue" for elements with a "target" attribute.</p>
+
+        <div>
+            <a class="exe85" href="https://www.w3schools.com">w3schools.com</a>
+            <a class="exe85" href="http://www.disney.com" target="_blank">disney.com</a>
+            <a class="exe85" href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+        </div>
+
+        <h2>Exercise 86</h2>
+        <p>Set the background-color to "lightblue" for elements with an attribute like: target="_blank"</p>
+
+        <div>
+            <a class="exe86" href="https://www.w3schools.com">w3schools.com</a>
+            <a class="exe86" href="http://www.disney.com" target="_blank">disney.com</a>
+            <a class="exe86" href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+        </div>
+
+
+        <h2>Exercise 87</h2>
+        <p>Set a border with the color "red", around elements with a "title" attribute containing the word "red".</p>
+
+        <div>
+            <img class="exe87" src="../../Images/logo_01.jpg" title="example red 1" width="107" height="90">
+            <img class="exe87" src="../../Images/logo_01.jpg" title="purple" width="107" height="80">
+            <img class="exe87" src="../../Images/logo_01.jpg" title="example red 2" width="116" height="90">
+        </div>
+
+        <h2>Exercise 88</h2>
+        <p>Set a border with the color "red", around elements with a "title" attribute starting with "red".</p>
+
+        <div>
+            <img class="exe88" src="../../Images/logo_01.jpg" title="red 1" width="107" height="90">
+            <img class="exe88" src="../../Images/logo_01.jpg" title="example red 2" width="107" height="80">
+            <img class="exe88" src="../../Images/logo_01.jpg" title="red 3" width="116" height="90">
+        </div>
+
+        <h2>Exercise 89</h2>
+        <p>Set a border with the color "red", around elements with a "title" attribute ending with the word "flower" (not flowers).</p>
+
+        <div>
+            <img class="exe89" src="../../Images/logo_01.jpg" title="two red flowers" width="107" height="90">
+            <img class="exe89" src="../../Images/logo_01.jpg" title="purple flower" width="107" height="80">
+            <img class="exe89" src="../../Images/logo_01.jpg" title="red flower" width="116" height="90">
+        </div>
+
+        <h2>Exercise 90</h2>
+        <p>Set a border with the color "red", around elements with a "title" attribute containing the value "flow".</p>
+
+        <div>
+            <img class="exe90" src="../../Images/logo_01.jpg" title="two red flowers" width="107" height="90">
+            <img class="exe90" src="../../Images/logo_01.jpg" title="purple flower" width="107" height="80">
+        </div>
+
+        <h2>Exercise 91</h2>
+        <p>Give the &lt;div&gt; element rounded corners (use the shorthand property and the value "25px").</p>
+
+        <div>
+            <div style="border-radius: 25px; background: #73AD21; padding: 20px; width: 200px;">This is a div element. It has some text.</div>
+        </div>
+
+        <h2>Exercise 92</h2>
+        <p>Give the &lt;div&gt; element a rounded corner (25px radius) on the bottom left side.</p>
+
+        <div>
+            <div style="border-bottom-left-radius: 25px; background: #73AD21; padding: 20px; width: 200px; ">This is a div element. It has some text.</div>
+        </div>
+
+        <h2>Exercise 93</h2>
+        <p>Give the &lt;div&gt; element an image border using the image "paper.jpg". Slice the image at 30px and repeat it.</p>
+
+        <div>
+            <div style="border: 10px solid transparent; border-image: url(../../Images/paper.jpg) 30 round;">This is a div element. It has some text.</div>
+        </div>
+
+        <h2>Exercise 94</h2>
+        <p>Give the &lt;div&gt; element an image border using the image "paper.jpg". Slice the image at 30px and stretch it.</p>
+
+        <div>
+            <div style="border: 10px solid transparent; border-image: url(../../Images/paper.jpg) 30 stretch;">This is a div element. It has some text.</div>
+        </div>
+
+        <h2>Exercise 95</h2>
+        <p>Add a second background image ("paper.jpg") to the &lt;body&gt; element. Make sure that "paper.jpg" is displayed on top of the current background image.</p>
+
+        <div style="background-image: url(../../Images/paper.jpg), url(../../Images/FB_boton.png);">
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 96</h2>
+        <p>Change the size of the background image to: width 100px, height 80px.</p>
+
+        <div style="background:url(../../Images/paper.jpg); background-size: 100px 80px; background-repeat: no-repeat;">
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 97</h2>
+        <p>Change the size of the background image so it always fits the entire page.</p>
+
+        <div style="background: url(../../Images/paper.jpg) no-repeat center center fixed; background-size: cover;">
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 98</h2>
+        <p>Specify that the background image position should start from the upper left corner of the content-box.</p>
+
+        <div style="border: 10px solid black; padding: 35px; background: url(../../Images/paper.jpg); background-repeat: no-repeat;
+        background-origin: content-box;">
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 99</h2>
+        <p>Specify that the "painting area" of the background should be to the outside edge of the padding.</p>
+
+        <div style="border: 10px dotted black; padding: 35px; background: lightblue; background-clip: padding-box;">
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 100</h2>
+        <p>Set the opacity for the background color of the &lt;h3&gt; element to "0.3" by using a RGBA color instead of RGB.</p>
+
+        <div>
+            <h3 style="background-color: rgba(0,255,0,0.3);">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 101</h2>
+        <p>Set the following HSL color as the background of the &lt;h3&gt; element: Set the Hue to red (0), Saturation to 100%, and lightness to 50%.</p>
+
+        <div>
+            <h3 style="background-color: hsl(0,100%,50%);">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+
+        <h2>Exercise 102</h2>
+        <p>Set the opacity for the background color of the &lt;h3&gt; element to "0.3" by using a HSLA color instead of HSL.</p>
+
+        <div>
+            <h3 style="background-color: hsla(0,100%,50%,0.3);">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+
+        <h2>Exercise 103</h2>
+        <p>Set the transparency/opacity of the &lt;h3&gt; element to "0.4".</p>
+
+        <div>
+            <h3 style="background-color: red; opacity: 0.4;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 104</h2>
+        <p>Set a linear gradient background for the &lt;div&gt; element, going from the top to bottom, transitioning from "white" to "green".</p>
+
+        <div>
+            <div style="height:200px; background-image: linear-gradient(white, green);"></div>
+        </div>
+
+        <h2>Exercise 105</h2>
+        <p>Set a linear gradient background for the &lt;div&gt; element, going from the top left to the bottom right, transitioning from "white" to "green".</p>
+
+        <div>
+            <div style="height:200px; background-image: linear-gradient(to bottom right, white, green);"></div>
+        </div>
+
+        <h2>Exercise 106</h2>
+        <p>Set a linear gradient background for the &lt;div&gt; element, going at a 70 degree angle, transitioning from "white" to "green".</p>
+
+        <div>
+            <div style="height:200px; background-image: linear-gradient(70deg, white, green);"></div>
+        </div>
+
+        <h2>Exercise 107</h2>
+        <p>Set a linear gradient background for the &lt;div&gt; element, going from the top to bottom, transitioning from "white" to "red" to "blue" to "green".</p>
+
+        <div>
+            <div style="height:200px; background-image: linear-gradient(white, red, blue, green);"></div>
+        </div>
+
+        <h2>Exercise 108</h2>
+        <p>Set a linear gradient background for the &lt;div&gt; element, going from the top to bottom, transitioning from "rgba(0,255,0,0.2)" to "rgba(0,255,0,1)".</p>
+
+        <div>
+            <div style="height:200px; background-image: linear-gradient(rgba(0,255,0,0.2), rgba(0,255,0,1));"></div>
+        </div>
+
+        <h2>Exercise 109</h2>
+        <p>Set a radial gradient background for the &lt;div&gt; element, transitioning from "white" to "green".</p>
+
+        <div>
+            <div style="height:200px; background-image: radial-gradient(white, green);"></div>
+        </div>
+
+        <h2>Exercise 110</h2>
+        <p>Set a radial gradient background for the &lt;div&gt; element, with a circle shape, transitioning from "white" to "green".</p>
+
+        <div>
+            <div style="height:200px; background-image: radial-gradient(circle, white, green);"></div>
+        </div>
+
+        <h2>Exercise 111</h2>
+        <p>Set a "2px" horizontal, and "2px" vertical, text shadow for the &lt;h3&gt; element.</p>
+
+        <div>
+            <h3 style="text-shadow: 2px 2px;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 112</h2>
+        <p>Change the color of the text shadow to "green", and set a "5px" blur radius.</p>
+
+        <div>
+            <h3 style="text-shadow: 2px 2px 5px green;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 113</h2>
+        <p>Add a new shadow (do not remove the current one) to the &lt;h3&gt; element with: no horizontal or vertical shadow, 10px blur, and a red color.</p>
+
+        <div>
+            <h3 style="text-shadow: 2px 2px 5px green, 0 0 10px red;">This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 114</h2>
+        <p>Set a "10px" horizontal, and "10px" vertical, box shadow for the &lt;div&gt; element.</p>
+
+        <div style="background-color: lightblue; width: 350px; padding: 15px; box-shadow: 10px 10px;">
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 115</h2>
+        <p>Change the color of the box shadow to "grey", and set a "5px" blur.</p>
+
+        <div style="background-color: lightblue; width: 350px; padding: 15px; box-shadow: 10px 10px 5px grey;">
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 116</h2>
+        <p>Specify that the overflowed content for the &lt;p&gt; element should be signaled with an ellipsis (...)</p>
+
+        <div>
+            <p style="white-space: nowrap; width: 200px; border: 1px solid #000000; overflow: hidden; text-overflow: ellipsis;">This paragraph contains a very long word: supercalifragilisticexpialidocious.</p>
+        </div>
+
+        <h2>Exercise 117</h2>
+        <p>Specify that text in the &lt;p&gt; element should wrap, even if it needs to split in the middle of a word.</p>
+
+        <div>
+            <p style="width: 150px; border: 1px solid #000000; word-wrap: break-word;">This paragraph contains a very long word: supercalifragilisticexpialidocious.</p>
+        </div>
+
+        <h2>Exercise 118</h2>
+        <p>Specify that text in the &lt;p&gt; element can break between any two letters.</p>
+
+        <div>
+            <p style="width: 150px; border: 1px solid #000000; word-break: break-all;">This paragraph contains a very long word: super-cali-fragi-listic-expialidocious.</p>
+        </div>
+
+
+        <h2>Exercise 119</h2>
+        <p>Add a web font with the name "sansation1" and the URL "sansation_light.woff".</p>
+
+        <div style="font-family: sansation1;">
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 120</h2>
+        <p>Add another @font-face rule for bold characters of the "sansation" font. Use the URL "sansation_bold.woff".</p>
+
+        <div style="font-family: sansation;">
+            <h3>This is a Heading</h3>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+
+        <h2>Exercise 121</h2>
+        <p>With the transform property, move the &lt;div&gt; element 200px to the right, and 30px down.</p>
+
+        <div style="width: 100px; height: 100px; background-color: lightblue; border: 1px solid black; transform: translate(200px,30px);">
+        </div>
+
+        <h2>Exercise 122</h2>
+        <p>With the transform property, rotate the &lt;div&gt; element 45 degrees.</p>
+
+        <div style="width: 100px; height: 100px; margin: 50px; background-color: lightblue; border: 1px solid black; transform: rotate(45deg);">
+        </div>
+
+        <h2>Exercise 123</h2>
+        <p>With the transform property, change the size of the &lt;div&gt; to half its width, but double its height.</p>
+
+        <div style="width: 100px; height: 100px; margin: 50px; background-color: lightblue; border: 1px solid black; transform: scale(0.5,2);">
+        </div>
+
+        <h2>Exercise 124</h2>
+        <p>With the transform property, skew the &lt;div&gt; element 20 degrees along the X-axis, and 30 degrees along the Y-axis.</p>
+
+        <div style="width: 100px; height: 100px; margin: 50px; background-color: lightblue; border: 1px solid black; transform: skew(20deg, 30deg);">    
+        </div>
+
+        <h2>Exercise 125</h2>
+        <p>With the transform property, rotate the &lt;div&gt; element 150deg around its X-axis.</p>
+
+        <div style="width: 100px; height: 100px; background-color: lightblue; border: 1px solid black; transform: rotateX(150deg);">This is a div element</div>
+
+        <h2>Exercise 126</h2>
+        <p>With the transform property, rotate the &lt;div&gt; element 120deg around its Y-axis.</p>
+
+        <div style="width: 100px; height: 100px; background-color: lightblue; border: 1px solid black; transform: rotateY(120deg);">This is a div element</div>
+
+        <h2>Exercise 127</h2>
+        <p>With the transform property, rotate the &lt;div&gt; element 90deg around its Z-axis.</p>
+
+        <div style="width: 100px; height: 100px; background-color: lightblue;border: 1px solid black; transform: rotateZ(90deg);">This is a div element</div>
+
+        <h2>Exercise 128</h2>
+        <p>Add a 2 second transition effect for width changes of the &lt;div&gt; element.</p>
+
+        <div>
+            <div class="exe128"></div>
+
+            <p>Hover over the div element above.</p>
+        </div>
+
+        <h2>Exercise 129</h2>
+        <p>Specify that the transition of the &lt;div>&gt; element should have a "ease-in-out" speed curve.</p>
+
+        <div>
+            <div class="exe129"></div>
+
+            <p>Hover over the div element above.</p>
+        </div>
+
+        <h2>Exercise 130</h2>
+        <p>Specify that the transition of the &lt;div&gt; element should have a "0.5" second delay before starting.</p>
+
+        <div>
+            <div class="exe130"></div>
+
+            <p>Hover over the div element above.</p>
+        </div>
+
+        <h2>Exercise 131</h2>
+        <p>Add a 2 second transition effect for background, and transform changes of the &lt;div&gt; element.</p>
+
+        <div>
+            <div class="exe131"></div>
+
+            <p>Hover over the div element above.</p>
+        </div>
+
+        <h2>Exercise 132</h2>
+        <p>Using the transition shorthand property, specify width changes for the &lt;div&gt; element should have:
+            "2" second duration, "ease-in-out" speed curve, and a "0.5" second delay before starting.</p>
+
+        <div>
+            <div class="exe132"></div>
+
+            <p>Hover over the div element above.</p>
+        </div>
+
+        <h2>Exercise 133</h2>
+        <p>Add a 2 second animation for the &lt;div&gt; element, which changes the color from red to blue. Call the animation "example"</p>
+
+        <div class="exe133">
+        </div>
+
+
+        <h2>Exercise 134</h2>
+        <p>Add the following 5 steps to the animation "example" (using 0%, 25%, 50%, 75%, and 100%):<br><br>
+            0% - Set background color to "red", left position to "0px", top position to: "0px"<br>
+            25% - Set background color to "blue", left position to "0px", top position to: "200px"<br>
+            50% - Set background color to "green", left position to "200px", top position to: "200px"<br>
+            75% - Set background color to "yellow", left position to "200px", top position to: "0px"<br>
+            100% - Set background color to "red", left position to "0px", top position to: "0px"</p>
+
+        <div class="exe134">
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+        <h2>Exercise 135</h2>
+        <p>Specify that the animation of the &lt;div&gt; element should have a "1" second delay before starting.</p>
+
+        <div class="exe135">    
+        </div>
+
+        <h2>Exercise 136</h2>
+        <p>Specify that the animation of the &lt;div&gt; element should continue to loop for ever.</p>
+
+        <div class="exe136">    
+        </div>
+
+        <h2>Exercise 137</h2>
+        <p>Specify that the animation of the &lt;div&gt; element should alternate between running forwards and backwards.</p>
+
+        <div class="exe137">
+        </div>
+
+        <h2>Exercise 138</h2>
+        <p>Specify that the animation of the &lt;div&gt; element should have a "ease-in-out" speed curve.</p>
+
+        <div class="exe138">
+        </div>
+    </body>
+</html>
