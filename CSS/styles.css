@@ -1,3 +1,12 @@
+body{
+	background-color: black;
+	margin: 0px;
+}
+header img{
+	max-width: 100%; 
+	max-height: auto; 
+	margin: 0px;
+}
 p{
 	font-family: Courier new;
 	font-size: 20px;
@@ -64,7 +73,6 @@ p a:hover{
     height: auto; 
     position: absolute;
     left: 0px;
-    /*transform: rotate(-45deg);*/
 }
 
 .tape1 img, .tape2 img
@@ -80,11 +88,22 @@ p a:hover{
     right: 0px;
     transform: rotate(45deg);
 }
+#tape{
+	position: absolute;
+}
+nav img{
+float: center;
+width: 100%;
+height: auto;
+}
+
+
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
+    position: relative;
 }
 
 li{
@@ -95,7 +114,7 @@ li a{
     display: block;
     font-family: Courier new;
 	font-size: 20px;
-    color: white;
+    color: black;
     text-align: center;
     padding: 20px;
     padding-right: 22px;
@@ -103,8 +122,9 @@ li a{
 }
 
 li a:hover{
-    background-color: yellow;
-    color: black;
+    font-weight: bold;
+    font-size: 21px;
+
 }
 
 
