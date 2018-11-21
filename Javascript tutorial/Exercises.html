@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	h1{
+		color: red;
+	}
+    </style>
+
+    <script>
+    	function myFunction() {
+    		document.getElementById("demo.02").innerHTML = "Paragraph changed.";
+    	}
+</script>
+</head>
+<body>
+
+<h1 style="color: black; text-align: center;">JAVASCRIPT TUTORIAL</h1>
+
+<h1>Exercise 1</h1>
+<h2>JavaScript in Body</h2>
+
+<p id="demo.01"></p>
+
+<script>
+document.getElementById("demo.01").innerHTML = "My First JavaScript";
+</script>
+
+<h1>Exercise 2</h1>
+<h2>A Web Page</h2>
+<p id="demo.02">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+<h1>Exercise 3</h1>
+<h2>My First Web Page</h2>
+<p>My First Paragraph</p>
+
+<p id="demo.03"></p>
+
+<script>
+document.getElementById("demo.03").innerHTML = 5 + 6;
+</script>
+
+
+<h1>Exercise 4</h1>
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<script>
+document.write(5 + 6);
+</script>
+
+<h1>Exercise 5</h1>
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+<h1>Exercise 6</h1>
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<script>
+window.alert(5 + 6);
+</script>
+
+<h1>Exercise 7</h1>
+<p>Select "Console" in the debugger menu. Then click Run again.</p>
+<script>
+console.log(5 + 6);
+</script>
+
+<h1>Exercise 8</h1>
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+<p id="demo.08"></p>
+
+<script>
+var x, y, z;  // Statement 1
+x = 5;        // Statement 2
+y = 6;        // Statement 3
+z = x + y;    // Statement 4
+document.getElementById("demo.08").innerHTML ="The value of z is " + z + ".";  
+</script>
+
+<h1>Exercise 9</h1>
+<p>JavaScript code blocks are written between { and }</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo.09"></p>
+<p id="demo.09.1"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo.09").innerHTML = "Hello Dolly!";
+    document.getElementById("demo.09.1").innerHTML = "How are you?";
+}
+</script>
+
+<h1>Exercise 10</h1>
+<h2>JavaScript Comments</h2>
+
+<p id="demo.10"></p>
+
+<script>
+var x = 5;      // Declare x, give it the value of 5
+var y = x + 2;  // Declare y, give it the value of x + 2 
+// Write y to demo:
+document.getElementById("demo.10").innerHTML = y;
+</script>
+
+<h1>Exercise 11</h1>
+<h2>JavaScript Variables</h2>
+
+<p>Strings are written with quotes.</p>
+<p>Numbers are written without quotes.</p>
+
+<p id="demo.11"></p>
+
+<script>
+var pi = 3.14;
+var person = "John Doe";
+var answer = 'Yes I am!';
+
+document.getElementById("demo.11").innerHTML =
+pi + "<br>" + person + "<br>" + answer;
+</script>
+
+<h1>Exercise 12</h1>
+<h2>JavaScript Functions</h2>
+<p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+<p id="demo.12"></p>
+
+<script>
+function toCelsius(f) {
+    return (5/9) * (f-32);
+}
+document.getElementById("demo.12").innerHTML = toCelsius(77);
+</script>
+
+
+<h1>Exercise 13</h1>
+<h2>JavaScript Objects</h2>
+
+<p id="demo.13"></p>
+
+<script>
+// Create an object:
+var car = {type:"Fiat", model:"500", color:"white"};
+
+// Display some data from the object:
+document.getElementById("demo.13").innerHTML = "The car color is " + car.color;
+</script>
+
+<h1>Exercise 14</h1>
+<button onclick="this.innerHTML=Date()">The time is?</button>
+
+<h1>Exercise 15</h1>
+<h2>JavaScript Arrays</h2>
+
+<p id="demo.15"></p>
+
+<script>
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo.15").innerHTML = cars;
+</script>
+
+<h1>Exercise 16</h1>
+<h2>JavaScript Arrays</h2>
+
+<p>The best way to loop through an array is using a standard for loop:</p>
+
+<p id="demo.16"></p>
+
+<script>
+var fruits, text, fLen, i;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fLen = fruits.length;
+
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+    text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo.16").innerHTML = text;
+</script>
+
+<h1>Exercise 17</h1>
+<p>Date.parse(string) returns milliseconds.</p>
+<p>You can use the return value to convert the string to a date object:</p>
+
+<p id="demo.17"></p>
+
+<script>
+var msec = Date.parse("March 21, 2012");
+var d = new Date(msec);
+document.getElementById("demo.17").innerHTML = d;
+</script>
+
+
+<h1>Exercise 18</h1>
+<h2>JavaScript Math.random()</h2>
+
+<p>Every time you click the button, getRndInteger(min, max) returns a random number between 1 and 10 (both included):</p>
+
+<button onclick="document.getElementById('demo.18').innerHTML = getRndInteger(1,10)">Click Me</button>
+
+<p id="demo.18"></p>
+
+<script>
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+</script>
+
+<h1>Exercise 19</h1>
+<p>Please input a number between 5 and 10:</p>
+
+<input id="demo.19" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+
+<p id="p01"></p>
+
+<script>
+function myFunction() {
+    var message, x;
+    message = document.getElementById("p01");
+    message.innerHTML = "";
+    x = document.getElementById("demo.19").value;
+    try { 
+        if(x == "")  throw "is empty";
+        if(isNaN(x)) throw "is not a number";
+        x = Number(x);
+        if(x > 10)   throw "is too high";
+        if(x < 5)    throw "is too low";
+    }
+    catch(err) {
+        message.innerHTML = "Input " + err;
+    }
+    finally {
+        document.getElementById("demo.19").value = "";
+    }
+}
+</script>
+
+<h1>Exercise 20</h1>
+<h2>The JavaScript this Keyword</h2>
+<p>In this example <strong>this</strong> refers to person2, even if it is a method of person1:</p>
+
+<p id="demo.20"></p>
+
+<script>
+var person1 = {
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+var person2 = {
+    firstName:"John",
+    lastName: "Doe",
+}
+var x = person1.fullName.call(person2); 
+document.getElementById("demo.20").innerHTML = x; 
+</script>
+
+<h1>Exercise 21</h1>
+<img src="../Images/JS/01.png">
+<h1>Exercise 22</h1>
+<img src="../Images/JS/02.png">
+<h1>Exercise 23</h1>
+<img src="../Images/JS/03.png">
+<h1>Exercise 24</h1>
+<img src="../Images/JS/04.png">
+<h1>Exercise 25</h1>
+<img src="../Images/JS/05.png">
+<h1>Exercise 26</h1>
+<img src="../Images/JS/06.png">
+<h1>Exercise 27</h1>
+<img src="../Images/JS/07.png">
+<h1>Exercise 28</h1>
+<img src="../Images/JS/08.png">
+<h1>Exercise 29</h1>
+<img src="../Images/JS/09.png">
+<h1>Exercise 30</h1>
+<img src="../Images/JS/10.png">
+<h1>Exercise 31</h1>
+<img src="../Images/JS/11.png">
+<h1>Exercise 32</h1>
+<img src="../Images/JS/12.png">
+<h1>Exercise 33</h1>
+<img src="../Images/JS/13.png">
+<h1>Exercise 34</h1>
+<img src="../Images/JS/14.png">
+<h1>Exercise 35</h1>
+<img src="../Images/JS/15.png">
+<h1>Exercise 36</h1>
+<img src="../Images/JS/16.png">
+<h1>Exercise 37</h1>
+<img src="../Images/JS/17.png">
+<h1>Exercise 38</h1>
+<img src="../Images/JS/18.png">
+<h1>Exercise 39</h1>
+<img src="../Images/JS/19.png">
+<h1>Exercise 40</h1>
+<img src="../Images/JS/20.png">
+<h1>Exercise 41</h1>
+<img src="../Images/JS/21.png">
+<h1>Exercise 42</h1>
+<img src="../Images/JS/22.png">
+<h1>Exercise 43</h1>
+<img src="../Images/JS/23.png">
+<h1>Exercise 44</h1>
+<img src="../Images/JS/24.png">
+<h1>Exercise 45</h1>
+<img src="../Images/JS/25.png">
+<h1>Exercise 46</h1>
+<img src="../Images/JS/26.png">
+<h1>Exercise 47</h1>
+<img src="../Images/JS/27.png">
+<h1>Exercise 48</h1>
+<img src="../Images/JS/28.png">
+<h1>Exercise 49</h1>
+<img src="../Images/JS/29.png">
+<h1>Exercise 50</h1>
+<img src="../Images/JS/30.png">
+<h1>Exercise 51</h1>
+<img src="../Images/JS/31.png">
+<h1>Exercise 52</h1>
+<img src="../Images/JS/32.png">
+<h1>Exercise 53</h1>
+<img src="../Images/JS/33.png">
+<h1>Exercise 54</h1>
+<img src="../Images/JS/34.png">
+<h1>Exercise 55</h1>
+<img src="../Images/JS/35.png">
+<h1>Exercise 56</h1>
+<img src="../Images/JS/36.png">
+<h1>Exercise 57</h1>
+<img src="../Images/JS/37.png">
+<h1>Exercise 58</h1>
+<img src="../Images/JS/38.png">
+<h1>Exercise 59</h1>
+<img src="../Images/JS/39.png">
+<h1>Exercise 60</h1>
+<img src="../Images/JS/40.png">
+<h1>Exercise 61</h1>
+<img src="../Images/JS/41.png">
+<h1>Exercise 62</h1>
+<img src="../Images/JS/42.png">
+<h1>Exercise 63</h1>
+<img src="../Images/JS/43.png">
+<h1>Exercise 64</h1>
+<img src="../Images/JS/44.png">
+<h1>Exercise 65</h1>
+<img src="../Images/JS/45.png">
+<h1>Exercise 66</h1>
+<img src="../Images/JS/46.png">
+<h1>Exercise 67</h1>
+<img src="../Images/JS/47.png">
+<h1>Exercise 68</h1>
+<img src="../Images/JS/48.png">
+<h1>Exercise 69</h1>
+<img src="../Images/JS/49.png">
+<h1>Exercise 70</h1>
+<img src="../Images/JS/50.png">
+<h1>Exercise 71</h1>
+<img src="../Images/JS/51.png">
+<h1>Exercise 72</h1>
+<img src="../Images/JS/52.png">
+<h1>Exercise 73</h1>
+<img src="../Images/JS/53.png">
+<h1>Exercise 74</h1>
+<img src="../Images/JS/54.png">
+<h1>Exercise 75</h1>
+<img src="../Images/JS/55.png">
+<h1>Exercise 76</h1>
+<img src="../Images/JS/56.png">
+<h1>Exercise 77</h1>
+<img src="../Images/JS/57.png">
+<h1>Exercise 78</h1>
+<img src="../Images/JS/58.png">
+<h1>Exercise 79</h1>
+<img src="../Images/JS/59.png">
+<h1>Exercise 80</h1>
+<img src="../Images/JS/60.png">
+<h1>Exercise 81</h1>
+<img src="../Images/JS/61.png">
+<h1>Exercise 82</h1>
+<img src="../Images/JS/62.png">
+<h1>Exercise 83</h1>
+<img src="../Images/JS/63.png">
+<h1>Exercise 84</h1>
+<img src="../Images/JS/64.png">
+<h1>Exercise 85</h1>
+<img src="../Images/JS/65.png">
+<h1>Exercise 86</h1>
+<img src="../Images/JS/66.png">
+<h1>Exercise 87</h1>
+<img src="../Images/JS/67.png">
+<h1>Exercise 88</h1>
+<img src="../Images/JS/68.png">
+<h1>Exercise 89</h1>
+<img src="../Images/JS/69.png">
+</body>
+</html> 
